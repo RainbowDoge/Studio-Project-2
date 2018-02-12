@@ -459,6 +459,9 @@ void Assignment2::Init()
 
 	meshList[GEO_TRASHCANTEXT] = MeshBuilder::GenerateText("trashcantext", 16, 16);
 	meshList[GEO_TRASHCANTEXT]->textureID = LoadTGA("Image//calibri.tga");
+
+	meshList[GEO_SPEAR] = MeshBuilder::GenerateOBJ("spear", "OBJ//Spear.obj");
+	meshList[GEO_SPEAR]->textureID = LoadTGA("Image//SpearUV.tga");
 	//END OF TEXTS
 
 }
@@ -1047,7 +1050,7 @@ void Assignment2::Render()
 				modelStack.Scale(0.05, 0.05, 0.05);
 				RenderMesh(meshList[GEO_FOUNTAIN], true);
 		modelStack.PopMatrix();
-
+	   
 		modelStack.PushMatrix();
 				modelStack.Translate(0.25, -30 , 12);
 				RenderMesh(meshList[GEO_TRASHCAN], true);
@@ -1097,6 +1100,11 @@ void Assignment2::Render()
 		modelStack.PushMatrix();
 				modelStack.Translate(19, -32.5, -36);
 				RenderMesh(meshList[GEO_LAMPPOST], true);
+		modelStack.PopMatrix();
+
+		modelStack.PushMatrix();
+				modelStack.Translate(0, 0, 0);
+				RenderMesh(meshList[GEO_SPEAR], true);
 		modelStack.PopMatrix();
 
 		//LAMP POST LIGHTS
@@ -1681,49 +1689,48 @@ void Assignment2::RenderMesh(Mesh *mesh, bool enableLight)
 void Assignment2::RenderSkybox()
 {
 	modelStack.PushMatrix();
-	modelStack.Scale(200, 200, 200);
-	modelStack.Translate(0.499, 0, 0);
+	modelStack.Scale(1000, 1000, 1000);
+	modelStack.Translate(0.5, 0, 0);
 	modelStack.Rotate(-90, 0, 1, 0);
-	RenderMesh(meshList[GEO_LEFT], false);
-	modelStack.PopMatrix();
-
-	modelStack.PushMatrix();
-	modelStack.Scale(200, 200, 200);
-	modelStack.Translate(-0.499 , 0, 0);
-	modelStack.Rotate(90, 0, 1, 0);
-	RenderMesh(meshList[GEO_RIGHT], false);
-	modelStack.PopMatrix();
-
-	modelStack.PushMatrix();
-	modelStack.Scale(200, 200, 200);
-	modelStack.Translate(0, 0.499, 0);
-	modelStack.Rotate(90, 1, 0, 0);
-	modelStack.Rotate(270, 0, 0, 1);
-	RenderMesh(meshList[GEO_TOP], false);
-	modelStack.PopMatrix();
-
-	modelStack.PushMatrix();
-	modelStack.Scale(200, 200, 200);
-	modelStack.Translate(0, -0.499, 0);
-	modelStack.Rotate(-90, 1, 0, 0);
-	RenderMesh(meshList[GEO_BOTTOM], false);
-	modelStack.PopMatrix();
-
-	modelStack.PushMatrix();
-	modelStack.Scale(200, 200, 200);
-	modelStack.Translate(0, 0, -0.499);
 	RenderMesh(meshList[GEO_FRONT], false);
 	modelStack.PopMatrix();
 
 	modelStack.PushMatrix();
-	modelStack.Scale(200, 200, 200);
-	modelStack.Translate(0, 0 ,0.499);
+	modelStack.Scale(1000, 1000, 1000);
+	modelStack.Translate(0, 0, -0.5);
+	modelStack.Rotate(0, 0, 1, 0);
+	RenderMesh(meshList[GEO_LEFT], false);
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Scale(1000, 1000, 1000);
+	modelStack.Translate(0, 0.5, 0);
+	modelStack.Rotate(90, 1, 0, 0);
+	modelStack.Rotate(90, 0, 0, 1);
+	RenderMesh(meshList[GEO_TOP], false);
+	modelStack.PopMatrix();
+
+	modelStack.PushMatrix();
+	modelStack.Scale(1000, 1000, 1000);
+	modelStack.Translate(0 , 0, 0.5);
 	modelStack.Rotate(180, 0, 1, 0);
+	RenderMesh(meshList[GEO_RIGHT], false);
+	modelStack.PopMatrix();
+	
+	modelStack.PushMatrix();
+	modelStack.Scale(1000, 1000, 1000);
+	modelStack.Translate(-0.5, 0 ,0);
+	modelStack.Rotate(90, 0, 1, 0);
 	RenderMesh(meshList[GEO_BACK], false);
 	modelStack.PopMatrix();
 
-
-
+	modelStack.PushMatrix();
+	modelStack.Scale(1000, 1000, 1000);
+	modelStack.Translate(0, -0.5, 0);
+	modelStack.Rotate(-90, 0, 1, 0);
+	modelStack.Rotate(-90, 1, 0, 0);
+	RenderMesh(meshList[GEO_BOTTOM], false);
+	modelStack.PopMatrix();
 }
 
 void Assignment2::RenderText(Mesh* mesh, std::string text, Color color)

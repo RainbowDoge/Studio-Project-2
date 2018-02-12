@@ -175,6 +175,8 @@ class Assignment2 : public Scene
 		GEO_ELECTRICBOX,
 		GEO_FOUNTAIN,
 		GEO_TRASHCAN,
+		GEO_SPEAR,
+
 		NUM_GEOMETRY,
 	};
 
