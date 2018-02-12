@@ -1,0 +1,132 @@
+﻿  Application.cpp
+  Camera.cpp
+  Camera3.cpp
+Source\Camera3.cpp(61): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Source\Camera3.cpp(62): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Source\Camera3.cpp(135): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Source\Camera3.cpp(144): warning C4305: '=': truncation from 'double' to 'float'
+Source\Camera3.cpp(148): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  Car.cpp
+  LoadOBJ.cpp
+  LoadTGA.cpp
+  main.cpp
+  Mesh.cpp
+  MeshBuilder.cpp
+Source\MeshBuilder.cpp(68): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\MeshBuilder.cpp(79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\MeshBuilder.cpp(86): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\MeshBuilder.cpp(87): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\MeshBuilder.cpp(98): warning C4018: '<': signed/unsigned mismatch
+Source\MeshBuilder.cpp(181): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\MeshBuilder.cpp(182): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\MeshBuilder.cpp(196): warning C4018: '<': signed/unsigned mismatch
+Source\MeshBuilder.cpp(232): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(237): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(242): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(247): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(252): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(257): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(265): warning C4018: '<': signed/unsigned mismatch
+Source\MeshBuilder.cpp(302): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(305): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(308): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(311): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(314): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(317): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(320): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(323): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(326): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(329): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(332): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(335): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(338): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(341): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(344): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(347): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(350): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(353): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(356): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(359): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(362): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(365): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(368): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(371): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(374): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(377): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(380): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(383): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(386): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(389): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(392): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(395): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(398): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(401): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(404): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(407): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\MeshBuilder.cpp(414): warning C4018: '<': signed/unsigned mismatch
+  Assignment2.cpp
+Source\Assignment2.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(37): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(809): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+Source\Assignment2.cpp(865): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\Assignment2.cpp(911): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\Assignment2.cpp(925): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\Assignment2.cpp(927): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\Assignment2.cpp(934): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\Assignment2.cpp(939): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\Assignment2.cpp(943): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+Source\Assignment2.cpp(1038): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\Assignment2.cpp(1044): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\Assignment2.cpp(1047): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1059): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1138): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\Assignment2.cpp(1144): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+Source\Assignment2.cpp(1150): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1213): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1219): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1225): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1231): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1237): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1243): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1249): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1255): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1261): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1267): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1273): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1279): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1285): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1291): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1297): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1304): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1310): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1321): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1327): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1333): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1339): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1345): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1351): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1357): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1363): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1369): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1375): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1381): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1387): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1393): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1399): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1405): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1411): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1417): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1685): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1692): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1699): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1707): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1714): warning C4305: 'argument': truncation from 'double' to 'float'
+Source\Assignment2.cpp(1720): warning C4305: 'argument': truncation from 'double' to 'float'
+  shader.cpp
+  Utility.cpp
+  Generating code
+  All 1036 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Release\MyGraphics.exe
+  MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Release\MyGraphics.pdb (Full PDB)
