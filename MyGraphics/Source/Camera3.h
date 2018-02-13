@@ -55,8 +55,6 @@ public:
 	void GetDinoRotation(float); //getting car rotation indirectly
 	bool GetBoolCar(bool); //pass value of bool in "main" for here to check
 
-	float GetSensitivity(void); // fumction to get sensitivity so that it can be used in main too
-	
 
 };
 

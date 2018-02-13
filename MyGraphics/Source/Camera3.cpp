@@ -92,27 +92,27 @@ void Camera3::Update(double dt)
 		if (Application::IsKeyPressed('A'))
 		{
 			position = position - right * MOVEMENT_SPEED;
-			position.y = -26;
+			position.y = 0;
 			target = position + view;
 		}
 
 		if (Application::IsKeyPressed('D'))
 		{
 			position = position + right *  MOVEMENT_SPEED;
-			position.y = -26;
+			position.y = 0;
 			target = position + view;
 		}
 		if (Application::IsKeyPressed('W'))
 		{
 			position = position + view * MOVEMENT_SPEED;
-			position.y = -26;
+			position.y = 0;
 			target = position + view;
 		}
 
 		if (Application::IsKeyPressed('S'))
 		{
 			position = position - view *MOVEMENT_SPEED;
-			position.y = -26;
+			position.y = 0;
 			target = position + view;
 		}
 	

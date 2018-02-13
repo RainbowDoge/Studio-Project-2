@@ -306,11 +306,16 @@ void StudioProject::Init()
 	//TEXTS
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
 	meshList[GEO_TEXT]->textureID = LoadTGA("Image//calibri.tga");
+	//END OF TEXTS
 
+	//DINOSAUR 
+	meshList[GEO_DINO1] = MeshBuilder::GenerateOBJ("velociraptor", "OBJ//dinosaur.obj");
+	meshList[GEO_DINO1]->textureID = LoadTGA("Image//dinosaur.tga");
+	//END OF DINOSAUR
 
 	meshList[GEO_SPEAR] = MeshBuilder::GenerateOBJ("spear", "OBJ//Spear.obj");
 	meshList[GEO_SPEAR]->textureID = LoadTGA("Image//SpearUV.tga");
-	//END OF TEXTS
+
 
 }
 
@@ -642,6 +647,10 @@ void StudioProject::Update(double dt)
 
 	#pragma region Interactive Booleans Updates
 
+		if (Application::IsKeyPressed('5'))
+		{
+			isPlayerinGame = true;
+		}
 		//Bool that checks if player is already in game
 		if (isPlayerinGame)
 		{
@@ -685,7 +694,7 @@ void StudioProject::Update(double dt)
 					camera.GetDinoRotation(maindinosaur.GetRotation()); //update the camera
 				}
 
-		/*		camera.CameraTranslator(car.GetPosition().x, car.GetPosition().y + 0.70, car.GetPosition().z);*/
+				camera.CameraTranslator(maindinosaur.GetPosition().x, maindinosaur.GetPosition().y + 7.5, maindinosaur.GetPosition().z);
 		}
 
 
@@ -746,6 +755,17 @@ void StudioProject::Render()
 				modelStack.Translate(0, 0, 0);
 				RenderMesh(meshList[GEO_SPEAR], true);
 		modelStack.PopMatrix();
+
+
+			modelStack.PushMatrix();
+				modelStack.Translate(maindinosaur.GetPosition().x, maindinosaur.GetPosition().y, maindinosaur.GetPosition().z);
+						modelStack.PushMatrix();
+			modelStack.Translate(camera.position.x, camera.position.y, camera.position.z);
+					modelStack.PopMatrix();
+				modelStack.Rotate(maindinosaur.GetRotation()+90, 0, 1, 0);
+				modelStack.Scale(5, 5, 5);
+				RenderMesh(meshList[GEO_DINO1], true);
+				modelStack.PopMatrix();
 
 
 		RenderTextOnScreen(meshList[GEO_TEXT], "FPS:", Color(1, 0, 0), 2, 27, 29);

@@ -1,4 +1,19 @@
-﻿Application.obj : error LNK2019: unresolved external symbol "public: __cdecl StopWatch::StopWatch(void)" (??0StopWatch@@QEAA@XZ) referenced in function "public: __cdecl Application::Application(void)" (??0Application@@QEAA@XZ)
+﻿  StudioProject.cpp
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(665): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(679): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(681): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(688): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(693): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(697): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  Camera3.cpp
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\camera3.cpp(61): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\camera3.cpp(62): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+  Generating Code...
+  Compiling...
+  Application.cpp
+  Generating Code...
+Application.obj : error LNK2019: unresolved external symbol "public: __cdecl StopWatch::StopWatch(void)" (??0StopWatch@@QEAA@XZ) referenced in function "public: __cdecl Application::Application(void)" (??0Application@@QEAA@XZ)
 Application.obj : error LNK2019: unresolved external symbol "public: __cdecl StopWatch::~StopWatch(void)" (??1StopWatch@@QEAA@XZ) referenced in function "public: __cdecl Application::~Application(void)" (??1Application@@QEAA@XZ)
 Application.obj : error LNK2019: unresolved external symbol "public: void __cdecl StopWatch::startTimer(void)" (?startTimer@StopWatch@@QEAAXXZ) referenced in function "public: void __cdecl Application::Run(void)" (?Run@Application@@QEAAXXZ)
 Application.obj : error LNK2019: unresolved external symbol "public: double __cdecl StopWatch::getElapsedTime(void)" (?getElapsedTime@StopWatch@@QEAANXZ) referenced in function "public: void __cdecl Application::Run(void)" (?Run@Application@@QEAAXXZ)
@@ -80,8 +95,8 @@ StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cd
 StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::PushMatrix(void)" (?PushMatrix@MS@@QEAAXXZ) referenced in function "public: virtual void __cdecl StudioProject::Render(void)" (?Render@StudioProject@@UEAAXXZ)
 StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::LoadIdentity(void)" (?LoadIdentity@MS@@QEAAXXZ) referenced in function "public: virtual void __cdecl StudioProject::Render(void)" (?Render@StudioProject@@UEAAXXZ)
 StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::LoadMatrix(class Mtx44 const &)" (?LoadMatrix@MS@@QEAAXAEBVMtx44@@@Z) referenced in function "public: virtual void __cdecl StudioProject::Init(void)" (?Init@StudioProject@@UEAAXXZ)
-StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::Rotate(float,float,float,float)" (?Rotate@MS@@QEAAXMMMM@Z) referenced in function "private: void __cdecl StudioProject::RenderSkybox(void)" (?RenderSkybox@StudioProject@@AEAAXXZ)
-StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::Scale(float,float,float)" (?Scale@MS@@QEAAXMMM@Z) referenced in function "private: void __cdecl StudioProject::RenderSkybox(void)" (?RenderSkybox@StudioProject@@AEAAXXZ)
+StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::Rotate(float,float,float,float)" (?Rotate@MS@@QEAAXMMMM@Z) referenced in function "public: virtual void __cdecl StudioProject::Render(void)" (?Render@StudioProject@@UEAAXXZ)
+StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::Scale(float,float,float)" (?Scale@MS@@QEAAXMMM@Z) referenced in function "public: virtual void __cdecl StudioProject::Render(void)" (?Render@StudioProject@@UEAAXXZ)
 StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::Translate(float,float,float)" (?Translate@MS@@QEAAXMMM@Z) referenced in function "public: virtual void __cdecl StudioProject::Render(void)" (?Render@StudioProject@@UEAAXXZ)
 StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::LookAt(double,double,double,double,double,double,double,double,double)" (?LookAt@MS@@QEAAXNNNNNNNNN@Z) referenced in function "public: virtual void __cdecl StudioProject::Render(void)" (?Render@StudioProject@@UEAAXXZ)
 StudioProject.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture

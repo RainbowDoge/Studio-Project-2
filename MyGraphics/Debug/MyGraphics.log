@@ -1,10 +1,10 @@
 ﻿  StudioProject.cpp
 c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(656): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(670): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(672): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(665): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(679): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(684): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(681): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(688): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(693): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(697): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
   MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Debug\MyGraphics.exe
   MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Debug\MyGraphics.pdb (Full PDB)

@@ -132,7 +132,7 @@ class StudioProject : public Scene
 		GEO_TEXT,
 		GEO_TREE,
 		GEO_SPEAR,
-
+		GEO_DINO1,
 		NUM_GEOMETRY,
 	};
 
