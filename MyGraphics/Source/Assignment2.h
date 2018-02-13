@@ -6,7 +6,7 @@
 #include "MeshBuilder.h"
 #include "MatrixStack.h"
 #include "Light.h"
-#include "Dinosaur.h"
+#include "Car.h"
 
 
 #include <iomanip>
@@ -199,12 +199,65 @@ private:
 	double sensitivity; //current sensitivity
 	double FPS; //fps
 
+	//double distance
+	double distfromcar;
+	double distfromelectricbox;
+	double distfromfountain;
+	double distfrombench;
+	double distfromtrashcan;
+
+	//double timers
+	double lighttimer;
+	double cooldowntimer;
+	double sensitivitydisappeartimer;
+
+	//int
+	int lightcount; 
+
 	//bools 
-	bool isPlayerinGame; // check if player is in game
+	bool isPlayerinCar; //check player in car
+	bool carfollower; // camera follower
 	bool isKeyPressed; //check if is keypressed
+
+	//car translate bools
+	bool translateMax;
+	float translateAmt;
+
+	//collision bools
+	bool carcollider;
+	bool electricboxcollider;
+	bool housecollider;
+	bool benchcollider;
+	bool garbagecancollider;
+	bool fountaincollider;
+	bool multipleinstance;
+	bool boundarycollider;
+
+	//end of collision bools
+
+	//Interaction bools V1
+	bool carinteraction;
+	bool electricboxinteraction;
+	bool fountaininteraction;
+	bool trashcaninteraction;
+
+	//Interaction bools V2
+	bool carcooldown;
+	bool lightturnon; //the light turns on after generator pressed
+	bool lightturnedon;
+	bool fountainpressed;
+	bool garbagecanpressed;
+	bool sensitivitychanged;
+	//End of interaction bools
+
+	bool keypressed;
+	//Vector 3
+	Vector3 lightsdirection;
 
 	//string
 	std::string frames;
+	std::string sensitivitycount;
+
 
 	Camera3 camera;
 	MS modelStack, viewStack, projectionStack;
@@ -212,7 +265,11 @@ private:
 	Light light[8];
 
 	//Init of car
-	Dinosaur dinosaur; //main car
+	Car car; //main car
+
+	//Side cars
+	Car car2;
+	Car car3;
 
 	//functions
 	void RenderMesh(Mesh *mesh, bool enableLight);
@@ -220,6 +277,7 @@ private:
 	void RenderText(Mesh* mesh, std::string text, Color color);
 	void RenderTextOnScreen(Mesh* mesh, std::string text, Color color, float size, float x, float y);
 	void BoundsCheck();
+	void CollisionChecks();
 };
 
 #endif

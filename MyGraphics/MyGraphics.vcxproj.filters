@@ -48,7 +48,7 @@
     <ClCompile Include="Source\Assignment2.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Source\Dinosaur.cpp">
+    <ClCompile Include="Source\Car.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -95,10 +95,10 @@
     <ClInclude Include="Source\Assignment2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Collision.h">
+    <ClInclude Include="Source\Car.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Source\Dinosaur.h">
+    <ClInclude Include="Source\Collision.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
