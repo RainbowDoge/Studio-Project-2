@@ -153,7 +153,8 @@ private:
 
 	//values
 	double FPS; //fps
-
+	double speed;
+	double acceleration;
 	//bools 
 	bool isPlayerinGame; //check player in game
 	bool isKeyPressed; //check if is keypressed

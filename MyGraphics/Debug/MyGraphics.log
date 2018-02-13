@@ -1,10 +1,11 @@
 ﻿  StudioProject.cpp
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(665): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(679): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(681): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(688): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(693): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(697): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Debug\MyGraphics.exe
-  MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Debug\MyGraphics.pdb (Full PDB)
+c:\users\linds\desktop\sp2 t13\mygraphics\source\studioproject.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\linds\desktop\sp2 t13\mygraphics\source\studioproject.cpp(667): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2 t13\mygraphics\source\studioproject.cpp(678): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2 t13\mygraphics\source\studioproject.cpp(692): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2 t13\mygraphics\source\studioproject.cpp(701): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2 t13\mygraphics\source\studioproject.cpp(707): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2 t13\mygraphics\source\studioproject.cpp(712): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2 t13\mygraphics\source\studioproject.cpp(741): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+  MyGraphics.vcxproj -> C:\Users\linds\Desktop\SP2 T13\Debug\MyGraphics.exe
+  MyGraphics.vcxproj -> C:\Users\linds\Desktop\SP2 T13\Debug\MyGraphics.pdb (Full PDB)

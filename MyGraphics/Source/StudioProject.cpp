@@ -655,42 +655,61 @@ void StudioProject::Update(double dt)
 		if (isPlayerinGame)
 		{
 				isKeyPressed = false; // init key pressed as false first
-				if (Application::IsKeyPressed('W'))
+				if (Application::IsKeyPressed('W') && acceleration < 0.21)
 				{
+					acceleration += 0.01;
+					speed = speed + acceleration;
 					//SPEED LIMITER
-					if (maindinosaur.GetSpeed() > 0.5) //max Speed == 0.5
+					if (speed > 4)
 					{
-						maindinosaur.SetSpeed(0.5f);
+						speed = 4;
 					}
-					maindinosaur.SetSpeed(maindinosaur.GetSpeed() + 1 * dt); //increase speed by 1 unit every dt
+					maindinosaur.SetSpeed(speed); //increase speed by 1 unit every dt (acceleration
 
 					maindinosaur.MoveDinoForward(); //move carforward
+					speed = maindinosaur.GetSpeed();
 					isKeyPressed = true; //Key has been pressed
 				}
-				if (Application::IsKeyPressed('S'))
+				
+				else if (speed > 0.01)
+				{
+					speed -= 0.1;
+					acceleration = 0;
+					maindinosaur.SetSpeed(speed);
+					maindinosaur.MoveDinoForward();
+				}
+				
+
+				if (Application::IsKeyPressed('S') && acceleration > -0.21)
 				{
 					//SPEED LIMITER
-					if (maindinosaur.GetSpeed() < -0.2) //Reversing must be slower than frontward
+					acceleration -= 0.01;
+					speed = speed + acceleration;
+					if (speed < -2)
 					{
-						maindinosaur.SetSpeed(-0.2f);
+						speed = -2;
 					}
-					if (maindinosaur.GetSpeed() >= 0) //car speed below 0
-					{
-						maindinosaur.SetSpeed(maindinosaur.GetSpeed() - 3 * dt); //slow down faster due to brakes
-					}
-					maindinosaur.SetSpeed(maindinosaur.GetSpeed() - 1 * dt);
+					maindinosaur.SetSpeed(speed);
 					maindinosaur.MoveDinoBackward(); //Move car backward
 					isKeyPressed = true; //Key has been pressed
+				}
+
+				else if (speed < -0.01)
+				{
+					speed += 0.1;
+					acceleration = 0;
+					maindinosaur.SetSpeed(speed);
+					maindinosaur.MoveDinoForward();
 				}
 				if (Application::IsKeyPressed('A'))
 				{
 					//so that turning rate is based on frames and the car's speed
-					maindinosaur.SetRotation(175 * dt * maindinosaur.GetSpeed()); //rotate car
+					maindinosaur.SetRotation(50 * dt * maindinosaur.GetSpeed()); //rotate car
 					camera.GetDinoRotation(maindinosaur.GetRotation()); //update the camera
 				}
 				if (Application::IsKeyPressed('D'))
 				{
-					maindinosaur.SetRotation(-175 * dt * maindinosaur.GetSpeed()); //rotate car
+					maindinosaur.SetRotation(-50 * dt * maindinosaur.GetSpeed()); //rotate car
 					camera.GetDinoRotation(maindinosaur.GetRotation()); //update the camera
 				}
 
@@ -753,7 +772,7 @@ void StudioProject::Render()
 	#pragma region Environment Objects
 		modelStack.PushMatrix();
 				modelStack.Translate(0, 0, 0);
-				RenderMesh(meshList[GEO_SPEAR], true);
+				RenderMesh(meshList[GEO_SPEAR], false);
 		modelStack.PopMatrix();
 
 
@@ -764,7 +783,7 @@ void StudioProject::Render()
 					modelStack.PopMatrix();
 				modelStack.Rotate(maindinosaur.GetRotation()+90, 0, 1, 0);
 				modelStack.Scale(5, 5, 5);
-				RenderMesh(meshList[GEO_DINO1], true);
+				RenderMesh(meshList[GEO_DINO1], false);
 				modelStack.PopMatrix();
 
 

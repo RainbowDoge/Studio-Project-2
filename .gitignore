@@ -1,1 +1,7 @@
 # Add any directories, files, or patterns you don't want to be tracked by version control
+.vs/MyGraphics/v15/ipch/AutoPCH/78cb3c23e96c8016/APPLICATION.ipch
+.vs/MyGraphics/v15/Solution.VC.db-shm
+.vs/MyGraphics/v15/Browse.VC.db
+.vs/MyGraphics/v15/Solution.VC.db-wal
+.vs/MyGraphics/v15/Browse.VC.opendb
+.vs/MyGraphics/v15/Solution.VC.db
