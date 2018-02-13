@@ -2,27 +2,22 @@
 #include "MyMath.h"
 #include "Vector3.h"
 
-class Car
+class Dinosaur
 {
 private:
-	Vector3 carPosition; //car position
+	Vector3 dinosaurPosition;
 	Vector3 direction;
 
 	float rotation;
 	float speed;
 
-	//pos coords of car
-	float x;
-	float y;
-	float z;
-
 public:
-	Car();
-	~Car();
+	Dinosaur();
+	~Dinosaur();
 
 	//functions to move car forward and backward
-	void MoveCarForward();
-	void MoveCarBackward();
+	void MoveDinoForward();
+	void MoveDinoBackward();
 
 	//accesors
 	float GetSpeed(void);

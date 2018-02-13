@@ -1,54 +1,5 @@
-﻿  Assignment2.cpp
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(37): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(812): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(868): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(914): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(928): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(930): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(937): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(942): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(946): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1041): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1047): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1050): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1062): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1146): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1152): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1158): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1221): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1227): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1233): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1239): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1245): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1251): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1257): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1263): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1269): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1275): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1281): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1287): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1293): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1299): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1305): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1312): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1318): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1329): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1335): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1341): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1347): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1353): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1359): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1365): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1371): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1377): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1383): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1389): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1395): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1401): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1407): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1413): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1419): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1425): warning C4305: 'argument': truncation from 'double' to 'float'
-  MyGraphics.vcxproj -> C:\Users\linds\Desktop\SP2\Debug\MyGraphics.exe
-  MyGraphics.vcxproj -> C:\Users\linds\Desktop\SP2\Debug\MyGraphics.pdb (Partial PDB)
+﻿  Dinosaur.cpp
+  Assignment2.cpp
+  Generating Code...
+  MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Debug\MyGraphics.exe
+  MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Debug\MyGraphics.pdb (Full PDB)

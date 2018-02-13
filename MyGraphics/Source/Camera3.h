@@ -21,13 +21,9 @@ private:
 	float yaw;
 	float pitch;
 	
-	//redundant? Car functions to check
-	bool isPlayerincar;
-	float carrotation;
+	float dinosaurrotation;
 
-	//sensitivity
-	float sensitivity;
-
+	bool temporary;// this is temp
 	//Camera vec 3's
 	Vector3 defaultPosition;
 	Vector3 defaultTarget;
@@ -53,11 +49,10 @@ public:
 	//function that sets back everything to zero for the mouse
 	void ResetFPS(void);
 
-	//Functions that make the camera turn along with the car
-	void GetCarRotation(float); //getting car rotation indirectly
-	bool GetBoolCar(bool); //pass value of bool in "main" for here to check
+	//Functions that make the camera turn along with the dinosaur
+	void GetDinosaurRotation(float); //getting car rotation indirectly
+	bool GetDinosaurBool(bool); //pass value of bool in "main" for here to check
 
-	float GetSensitivity(void); // fumction to get sensitivity so that it can be used in main too
 	
 
 };

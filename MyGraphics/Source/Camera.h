@@ -2,7 +2,7 @@
 #define CAMERA_H
 
 #include "Vector3.h"
-#include "Car.h"
+#include "Dinosaur.h"
 #include "MyMath.h"
 
 class Camera
