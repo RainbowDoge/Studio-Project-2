@@ -795,9 +795,15 @@ void StudioProject::Render()
 				modelStack.PopMatrix();
 
 
+				modelStack.PushMatrix();
+				RenderMeshOnScreen(meshList[GEO_LIGHTBALL], 8, 52, 5, 5);
+				modelStack.PopMatrix();
+
+
 		RenderTextOnScreen(meshList[GEO_TEXT], "FPS:", Color(1, 0, 0), 2, 27, 29);
 		RenderTextOnScreen(meshList[GEO_TEXT], frames, Color(1, 0, 0), 2, 31, 29);
 
+	
 
 }
 
@@ -962,6 +968,28 @@ void StudioProject::RenderTextOnScreen(Mesh* mesh, std::string text, Color color
 	
 	glEnable(GL_DEPTH_TEST);
 }
+
+void StudioProject::RenderMeshOnScreen(Mesh* mesh, int x, int y, int sizex, int sizey)
+{
+	glDisable(GL_DEPTH_TEST);
+	Mtx44 ortho;
+	ortho.SetToOrtho(0, 80, 0, 60, -10, 10); //size of screen UI
+	projectionStack.PushMatrix();
+	projectionStack.LoadMatrix(ortho);
+	viewStack.PushMatrix();
+	viewStack.LoadIdentity(); //No need camera for ortho mode
+	modelStack.PushMatrix();
+	modelStack.LoadIdentity();
+	//to do: scale and translate accordingly
+	modelStack.Translate(x, y, 0);
+	modelStack.Scale(sizex, sizey, 0);
+	RenderMesh(mesh, false); //UI should not have light
+	projectionStack.PopMatrix();
+	viewStack.PopMatrix();
+	modelStack.PopMatrix();
+	glEnable(GL_DEPTH_TEST);
+}
+
 
 void StudioProject::Exit()
 {
