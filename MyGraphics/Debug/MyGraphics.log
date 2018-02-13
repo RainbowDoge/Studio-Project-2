@@ -1,86 +1,10 @@
-﻿  Utility.cpp
-  shader.cpp
-  Assignment2.cpp
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(37): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(812): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(868): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(914): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(928): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(930): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(937): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(942): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(946): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1054): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1060): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1066): warning C4305: 'argument': truncation from 'double' to 'float'
-  MeshBuilder.cpp
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(68): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(86): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(87): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(98): warning C4018: '<': signed/unsigned mismatch
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(181): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(182): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(196): warning C4018: '<': signed/unsigned mismatch
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(232): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(237): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(242): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(247): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(252): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(257): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(265): warning C4018: '<': signed/unsigned mismatch
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(302): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(305): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(308): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(311): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(314): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(317): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(320): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(323): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(326): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(329): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(332): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(335): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(338): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(341): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(344): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(347): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(350): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(353): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(356): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(359): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(362): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(365): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(368): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(371): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(374): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(377): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(380): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(383): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(386): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(389): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(392): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(395): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(398): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(401): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(404): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(407): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(414): warning C4018: '<': signed/unsigned mismatch
-  Mesh.cpp
-  main.cpp
-  LoadTGA.cpp
-  LoadOBJ.cpp
-  Car.cpp
-  Camera3.cpp
-c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(61): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(62): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(135): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(144): warning C4305: '=': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(148): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
-  Camera.cpp
-  Application.cpp
-  Generating Code...
-  MyGraphics.vcxproj -> C:\Users\linds\Desktop\SP2\Debug\MyGraphics.exe
-  MyGraphics.vcxproj -> C:\Users\linds\Desktop\SP2\Debug\MyGraphics.pdb (Partial PDB)
+﻿  StudioProject.cpp
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(656): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(670): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(672): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(679): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(684): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+LINK : warning LNK4098: defaultlib 'MSVCRT' conflicts with use of other libs; use /NODEFAULTLIB:library
+  MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Debug\MyGraphics.exe
+  MyGraphics.vcxproj -> C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Debug\MyGraphics.pdb (Full PDB)

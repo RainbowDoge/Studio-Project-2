@@ -28,7 +28,7 @@ void Camera3::Init(const Vector3& pos, const Vector3& target, const Vector3& up)
 
 	 isFirst = true;
 
-	 sensitivity = 1.0f;
+
 }
 
 void Camera3::ResetFPS(void)
@@ -58,8 +58,8 @@ void Camera3::Update(double dt)
 		Application::GetMousePos(xMouse, yMouse);
 	}
 
-	horizontalAngle += (sensitivity * dt * float(800 / 2 - xMouse));
-	verticalAngle += (sensitivity * dt * float(600 / 2 - yMouse));
+	horizontalAngle += (dt * float(800 / 2 - xMouse));
+	verticalAngle += (dt * float(600 / 2 - yMouse));
 
 	yaw = horizontalAngle;
 	pitch = verticalAngle;
@@ -78,10 +78,10 @@ void Camera3::Update(double dt)
 	view = rotation * rotation2 * view;
 	target = position + view;
 
-	if (isPlayerincar) // they are in car and the camera rotates based on how the car moves
+	if (isPlayerinGame) // they are in car and the camera rotates based on how the car moves
 	{
-		float dirX = cos(Math::DegreeToRadian(-carrotation));
-		float dirZ = sin(Math::DegreeToRadian(-carrotation));
+		float dirX = cos(Math::DegreeToRadian(-dinorotation));
+		float dirZ = sin(Math::DegreeToRadian(-dinorotation));
 		Vector3 Direction = Vector3(dirX, 0, dirZ);
 		view = view + Direction;
 		target = position + view;
@@ -123,39 +123,12 @@ void Camera3::Update(double dt)
 		Reset();
 	}
 
-	//Sensitivity Changes
-	if (Application::IsKeyPressed('K'))
-	{
-		if (sensitivity > 5)
-		{
-			sensitivity = 5;
-		}
-		else
-		{
-			sensitivity += dt;
-		}
-		std::cout << sensitivity << std::endl;
-	}
-
-	if (Application::IsKeyPressed('L'))
-	{
-		if (sensitivity < 0.1)
-		{
-			sensitivity = 0.1;
-		}
-		else
-		{
-			sensitivity -= dt;
-		}
-		std::cout << sensitivity << std::endl;
-	}
-	//End of Sensitivity Change
 
 	//Arrow Keys
 	if (Application::IsKeyPressed(VK_LEFT))
 	{
 
-		yaw = (float)(sensitivity * dt);
+		yaw = (float)(CAMERA_SPEED * dt);
 		view = (target - position).Normalized();
 		right = view.Cross(up);
 		right.y = 0;
@@ -172,7 +145,7 @@ void Camera3::Update(double dt)
 
 	if (Application::IsKeyPressed(VK_RIGHT) )
 	{
-		 yaw = (float)(-sensitivity * dt);
+		 yaw = (float)(-CAMERA_SPEED * dt);
 		Vector3 view = (target - position).Normalized();
 		Vector3 right = view.Cross(up);
 		right.y = 0;
@@ -189,7 +162,7 @@ void Camera3::Update(double dt)
 	if (Application::IsKeyPressed(VK_UP) )
 	{
 
-		 pitch = (float)(sensitivity * dt);
+		 pitch = (float)(CAMERA_SPEED * dt);
 		Vector3 view = (target - position).Normalized();
 		Vector3 right = view.Cross(up);
 		right.y = 0;
@@ -207,7 +180,7 @@ void Camera3::Update(double dt)
 	if (Application::IsKeyPressed(VK_DOWN))
 	{
 		
-		pitch = (float)(-sensitivity * dt);
+		pitch = (float)(-CAMERA_SPEED * dt);
 		Vector3 view = (target - position).Normalized();
 		Vector3 right = view.Cross(up);
 		right.y = 0;
@@ -244,18 +217,13 @@ void Camera3::Reset()
 
 bool Camera3::GetBoolCar(bool isPlayer)
 {
-	isPlayerincar = isPlayer;
-	return isPlayerincar;
+	isPlayerinGame = isPlayer;
+	return isPlayerinGame;
 }
 
-void Camera3::GetCarRotation(float carrot)
+void Camera3::GetDinoRotation(float rotation)
 {
-	carrotation = carrot;
+	dinorotation = rotation;
 }
-float Camera3::GetSensitivity(void)
-{
-	return sensitivity;
-}
-
 
 
