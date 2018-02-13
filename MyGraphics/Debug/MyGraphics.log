@@ -1,4 +1,6 @@
-﻿  Assignment2.cpp
+﻿  Utility.cpp
+  shader.cpp
+  Assignment2.cpp
 c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
 c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(37): warning C4305: 'argument': truncation from 'double' to 'float'
 c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(812): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
@@ -9,46 +11,76 @@ c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(930): warning C4244
 c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(937): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(942): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(946): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1041): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1047): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1050): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1062): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1146): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1152): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1158): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1221): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1227): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1233): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1239): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1245): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1251): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1257): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1263): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1269): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1275): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1281): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1287): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1293): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1299): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1305): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1312): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1318): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1329): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1335): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1341): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1347): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1353): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1359): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1365): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1371): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1377): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1383): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1389): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1395): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1401): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1407): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1413): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1419): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1425): warning C4305: 'argument': truncation from 'double' to 'float'
+c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1054): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1060): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\assignment2.cpp(1066): warning C4305: 'argument': truncation from 'double' to 'float'
+  MeshBuilder.cpp
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(68): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(86): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(87): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(98): warning C4018: '<': signed/unsigned mismatch
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(181): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(182): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(196): warning C4018: '<': signed/unsigned mismatch
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(232): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(237): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(242): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(247): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(252): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(257): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(265): warning C4018: '<': signed/unsigned mismatch
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(302): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(305): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(308): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(311): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(314): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(317): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(320): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(323): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(326): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(329): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(332): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(335): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(338): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(341): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(344): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(347): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(350): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(353): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(356): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(359): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(362): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(365): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(368): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(371): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(374): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(377): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(380): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(383): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(386): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(389): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(392): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(395): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(398): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(401): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(404): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(407): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\meshbuilder.cpp(414): warning C4018: '<': signed/unsigned mismatch
+  Mesh.cpp
+  main.cpp
+  LoadTGA.cpp
+  LoadOBJ.cpp
+  Car.cpp
+  Camera3.cpp
+c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(61): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(62): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(135): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
+c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(144): warning C4305: '=': truncation from 'double' to 'float'
+c:\users\linds\desktop\sp2\mygraphics\source\camera3.cpp(148): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+  Camera.cpp
+  Application.cpp
+  Generating Code...
   MyGraphics.vcxproj -> C:\Users\linds\Desktop\SP2\Debug\MyGraphics.exe
   MyGraphics.vcxproj -> C:\Users\linds\Desktop\SP2\Debug\MyGraphics.pdb (Partial PDB)
