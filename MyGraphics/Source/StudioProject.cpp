@@ -270,7 +270,7 @@ void StudioProject::Init()
 	meshList[GEO_LIGHTBALL] = MeshBuilder::GenerateSphere("sphere", Color(1, 1, 1), 18, 36, 1);
 
 	meshList[GEO_QUAD] = MeshBuilder::GenerateQuad("quad", Color(1, 1, 1), 1.f, 1.f);
-	meshList[GEO_QUAD]->textureID = LoadTGA("Image//QuadFloor.tga");
+	meshList[GEO_QUAD]->textureID = LoadTGA("Image//ground.tga");
 
 	#pragma region SKYBOX
 		//INIT SKYBOX LEFT
@@ -296,12 +296,12 @@ void StudioProject::Init()
 	//meshList[GEO_IMAGE] = MeshBuilder::GenerateQuad("copy", Color(1, 1, 1), 1.0f, 1.0f);
 	//meshList[GEO_IMAGE]->textureID = LoadTGA("Image//copy.tga");
 
-	//meshList[GEO_DOORMAN] = MeshBuilder::GenerateOBJ("doorman", "OBJ//doorman.obj");
-	//meshList[GEO_DOORMAN]->textureID = LoadTGA("Image//doorman.tga");
+	meshList[GEO_DOORMAN] = MeshBuilder::GenerateOBJ("doorman", "OBJ//doorman.obj");
+	meshList[GEO_DOORMAN]->textureID = LoadTGA("Image//doorman.tga");
 
 
-	//meshList[GEO_TREE] = MeshBuilder::GenerateOBJ("tree", "OBJ//tree.obj");
-	//meshList[GEO_TREE]->textureID = LoadTGA("Image//tree.tga");
+	meshList[GEO_TREE] = MeshBuilder::GenerateOBJ("tree", "OBJ//tree.obj");
+	meshList[GEO_TREE]->textureID = LoadTGA("Image//tree.tga");
 
 	//TEXTS
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
@@ -660,9 +660,9 @@ void StudioProject::Update(double dt)
 					acceleration += 0.01;
 					speed = speed + acceleration;
 					//SPEED LIMITER
-					if (speed > 3)
+					if (speed > 4)
 					{
-						speed = 3;
+						speed = 4;
 					}
 					maindinosaur.SetSpeed(speed); //increase speed by 1 unit every dt (acceleration
 
@@ -769,14 +769,6 @@ void StudioProject::Render()
 
 	RenderSkybox();
 
-	modelStack.PushMatrix();
-		modelStack.Translate(0, -1, 0);
-		modelStack.Scale(1000, 1000, 1000);
-		modelStack.Rotate(-90, 0, 1, 0);
-		modelStack.Rotate(-90, 1, 0, 0);
-		RenderMesh(meshList[GEO_QUAD], false);
-	modelStack.PopMatrix();
-
 	#pragma region Environment Objects
 		modelStack.PushMatrix();
 				modelStack.Translate(0, 0, 0);
@@ -797,6 +789,7 @@ void StudioProject::Render()
 
 		RenderTextOnScreen(meshList[GEO_TEXT], "FPS:", Color(1, 0, 0), 2, 27, 29);
 		RenderTextOnScreen(meshList[GEO_TEXT], frames, Color(1, 0, 0), 2, 31, 29);
+
 
 }
 
