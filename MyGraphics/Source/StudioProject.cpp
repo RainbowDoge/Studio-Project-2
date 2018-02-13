@@ -293,8 +293,11 @@ void StudioProject::Init()
 		meshList[GEO_BACK]->textureID = LoadTGA("Image//back.tga");
 	#pragma endregion
 
-	//meshList[GEO_IMAGE] = MeshBuilder::GenerateQuad("copy", Color(1, 1, 1), 1.0f, 1.0f);
-	//meshList[GEO_IMAGE]->textureID = LoadTGA("Image//copy.tga");
+		meshList[GEO_TAILSYMBOL] = MeshBuilder::GenerateQuad("tailSymbol", Color(1, 1, 1), 1.0f, 1.0f);
+		meshList[GEO_TAILSYMBOL]->textureID = LoadTGA("Image//tailSymbol.tga");
+
+		meshList[GEO_BITESYMBOL] = MeshBuilder::GenerateQuad("biteSymbol", Color(1, 1, 1), 1.0f, 1.0f);
+		meshList[GEO_BITESYMBOL]->textureID = LoadTGA("Image//biteSymbol.tga");
 
 	meshList[GEO_DOORMAN] = MeshBuilder::GenerateOBJ("doorman", "OBJ//doorman.obj");
 	meshList[GEO_DOORMAN]->textureID = LoadTGA("Image//doorman.tga");
@@ -316,7 +319,8 @@ void StudioProject::Init()
 	meshList[GEO_SPEAR] = MeshBuilder::GenerateOBJ("spear", "OBJ//Spear.obj");
 	meshList[GEO_SPEAR]->textureID = LoadTGA("Image//SpearUV.tga");
 
-
+	meshList[GEO_CHECKPOINT] = MeshBuilder::GenerateOBJ("checkpoint", "OBJ//CheckPoint.obj");
+	meshList[GEO_CHECKPOINT]->textureID = LoadTGA("Image//CheckPointUV.tga");
 }
 
 bool isPointinBox(Vector3 position, Box box)
@@ -775,6 +779,21 @@ void StudioProject::Render()
 				RenderMesh(meshList[GEO_SPEAR], false);
 		modelStack.PopMatrix();
 
+		modelStack.PushMatrix();
+		modelStack.Translate(0, 0, -5);
+		modelStack.Scale(7, 7, 7);
+		RenderMesh(meshList[GEO_CHECKPOINT], false);
+		modelStack.PopMatrix();
+
+		modelStack.PushMatrix();
+		modelStack.Translate(0, 0, 0);
+		RenderMesh(meshList[GEO_TAILSYMBOL], false);
+		modelStack.PopMatrix();
+
+		modelStack.PushMatrix();
+		modelStack.Translate(0, 0, 1);
+		RenderMesh(meshList[GEO_BITESYMBOL], false);
+		modelStack.PopMatrix();
 
 			modelStack.PushMatrix();
 				modelStack.Translate(maindinosaur.GetPosition().x, maindinosaur.GetPosition().y, maindinosaur.GetPosition().z);

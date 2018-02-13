@@ -133,6 +133,9 @@ class StudioProject : public Scene
 		GEO_TREE,
 		GEO_SPEAR,
 		GEO_DINO1,
+		GEO_TAILSYMBOL,
+		GEO_BITESYMBOL,
+		GEO_CHECKPOINT,
 		NUM_GEOMETRY,
 	};
 
