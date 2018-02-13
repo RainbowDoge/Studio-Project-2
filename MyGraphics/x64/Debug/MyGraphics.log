@@ -1,87 +1,8 @@
-﻿  Utility.cpp
-  shader.cpp
-  StudioProject.cpp
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(31): warning C4305: 'argument': truncation from 'double' to 'float'
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(656): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(670): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(672): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(679): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\studioproject.cpp(684): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-  MeshBuilder.cpp
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(61): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(68): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(78): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(79): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(86): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(87): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(110): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(168): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(181): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(182): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(208): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(232): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(237): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(242): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(247): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(252): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(257): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(277): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(302): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(305): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(308): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(311): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(314): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(317): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(320): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(323): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(326): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(329): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(332): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(335): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(338): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(341): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(344): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(347): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(350): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(353): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(356): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(359): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(362): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(365): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(368): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(371): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(374): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(377): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(380): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(383): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(386): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(389): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(392): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(395): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(398): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(401): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(404): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(407): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(426): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(454): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\meshbuilder.cpp(512): warning C4267: '=': conversion from 'size_t' to 'unsigned int', possible loss of data
-  Mesh.cpp
-  main.cpp
-  LoadTGA.cpp
-  LoadOBJ.cpp
-  Dinosaur.cpp
-  Camera3.cpp
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\camera3.cpp(61): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-c:\users\isaac\onedrive\documents\studio-project 2\mygraphics\source\camera3.cpp(62): warning C4244: '+=': conversion from 'double' to 'float', possible loss of data
-  Camera.cpp
-  Application.cpp
-  Generating Code...
-Application.obj : error LNK2019: unresolved external symbol "public: __cdecl StopWatch::StopWatch(void)" (??0StopWatch@@QEAA@XZ) referenced in function "public: __cdecl Application::Application(void)" (??0Application@@QEAA@XZ)
+﻿Application.obj : error LNK2019: unresolved external symbol "public: __cdecl StopWatch::StopWatch(void)" (??0StopWatch@@QEAA@XZ) referenced in function "public: __cdecl Application::Application(void)" (??0Application@@QEAA@XZ)
 Application.obj : error LNK2019: unresolved external symbol "public: __cdecl StopWatch::~StopWatch(void)" (??1StopWatch@@QEAA@XZ) referenced in function "public: __cdecl Application::~Application(void)" (??1Application@@QEAA@XZ)
 Application.obj : error LNK2019: unresolved external symbol "public: void __cdecl StopWatch::startTimer(void)" (?startTimer@StopWatch@@QEAAXXZ) referenced in function "public: void __cdecl Application::Run(void)" (?Run@Application@@QEAAXXZ)
 Application.obj : error LNK2019: unresolved external symbol "public: double __cdecl StopWatch::getElapsedTime(void)" (?getElapsedTime@StopWatch@@QEAANXZ) referenced in function "public: void __cdecl Application::Run(void)" (?Run@Application@@QEAAXXZ)
 Application.obj : error LNK2019: unresolved external symbol "public: void __cdecl StopWatch::waitUntil(__int64)" (?waitUntil@StopWatch@@QEAAX_J@Z) referenced in function "public: void __cdecl Application::Run(void)" (?Run@Application@@QEAAXXZ)
-Application.obj : error LNK2019: unresolved external symbol __imp_glViewport referenced in function "void __cdecl resize_callback(struct GLFWwindow *,int,int)" (?resize_callback@@YAXPEAUGLFWwindow@@HH@Z)
 Application.obj : error LNK2019: unresolved external symbol __imp_glewInit referenced in function "public: void __cdecl Application::Init(void)" (?Init@Application@@QEAAXXZ)
 Application.obj : error LNK2019: unresolved external symbol __imp_glewGetErrorString referenced in function "public: void __cdecl Application::Init(void)" (?Init@Application@@QEAAXXZ)
 Application.obj : error LNK2019: unresolved external symbol glfwInit referenced in function "public: void __cdecl Application::Init(void)" (?Init@Application@@QEAAXXZ)
@@ -137,15 +58,7 @@ LoadOBJ.obj : error LNK2001: unresolved external symbol "public: __cdecl Vector3
 MeshBuilder.obj : error LNK2001: unresolved external symbol "public: __cdecl Vector3::Vector3(struct Vector3 const &)" (??0Vector3@@QEAA@AEBU0@@Z)
 Dinosaur.obj : error LNK2019: unresolved external symbol "public: struct Vector3 & __cdecl Vector3::operator+=(struct Vector3 const &)" (??YVector3@@QEAAAEAU0@AEBU0@@Z) referenced in function "public: void __cdecl Dinosaur::MoveDinoForward(void)" (?MoveDinoForward@Dinosaur@@QEAAXXZ)
 Dinosaur.obj : error LNK2019: unresolved external symbol "public: struct Vector3 & __cdecl Vector3::operator-=(struct Vector3 const &)" (??ZVector3@@QEAAAEAU0@AEBU0@@Z) referenced in function "public: void __cdecl Dinosaur::MoveDinoBackward(void)" (?MoveDinoBackward@Dinosaur@@QEAAXXZ)
-LoadTGA.obj : error LNK2019: unresolved external symbol __imp_glBindTexture referenced in function "unsigned int __cdecl LoadTGA(char const *)" (?LoadTGA@@YAIPEBD@Z)
-StudioProject.obj : error LNK2001: unresolved external symbol __imp_glBindTexture
-LoadTGA.obj : error LNK2019: unresolved external symbol __imp_glGenTextures referenced in function "unsigned int __cdecl LoadTGA(char const *)" (?LoadTGA@@YAIPEBD@Z)
-LoadTGA.obj : error LNK2019: unresolved external symbol __imp_glGetFloatv referenced in function "unsigned int __cdecl LoadTGA(char const *)" (?LoadTGA@@YAIPEBD@Z)
-LoadTGA.obj : error LNK2019: unresolved external symbol __imp_glTexImage2D referenced in function "unsigned int __cdecl LoadTGA(char const *)" (?LoadTGA@@YAIPEBD@Z)
-LoadTGA.obj : error LNK2019: unresolved external symbol __imp_glTexParameteri referenced in function "unsigned int __cdecl LoadTGA(char const *)" (?LoadTGA@@YAIPEBD@Z)
 LoadTGA.obj : error LNK2001: unresolved external symbol __imp___glewGenerateMipmap
-Mesh.obj : error LNK2019: unresolved external symbol __imp_glDeleteTextures referenced in function "public: __cdecl Mesh::~Mesh(void)" (??1Mesh@@QEAA@XZ)
-Mesh.obj : error LNK2019: unresolved external symbol __imp_glDrawElements referenced in function "public: void __cdecl Mesh::Render(unsigned int,unsigned int)" (?Render@Mesh@@QEAAXII@Z)
 Mesh.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
 MeshBuilder.obj : error LNK2001: unresolved external symbol __imp___glewBindBuffer
 Mesh.obj : error LNK2001: unresolved external symbol __imp___glewDeleteBuffers
@@ -171,12 +84,6 @@ StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cd
 StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::Scale(float,float,float)" (?Scale@MS@@QEAAXMMM@Z) referenced in function "private: void __cdecl StudioProject::RenderSkybox(void)" (?RenderSkybox@StudioProject@@AEAAXXZ)
 StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::Translate(float,float,float)" (?Translate@MS@@QEAAXMMM@Z) referenced in function "public: virtual void __cdecl StudioProject::Render(void)" (?Render@StudioProject@@UEAAXXZ)
 StudioProject.obj : error LNK2019: unresolved external symbol "public: void __cdecl MS::LookAt(double,double,double,double,double,double,double,double,double)" (?LookAt@MS@@QEAAXNNNNNNNNN@Z) referenced in function "public: virtual void __cdecl StudioProject::Render(void)" (?Render@StudioProject@@UEAAXXZ)
-StudioProject.obj : error LNK2019: unresolved external symbol __imp_glBlendFunc referenced in function "public: virtual void __cdecl StudioProject::Init(void)" (?Init@StudioProject@@UEAAXXZ)
-StudioProject.obj : error LNK2019: unresolved external symbol __imp_glClear referenced in function "public: virtual void __cdecl StudioProject::Render(void)" (?Render@StudioProject@@UEAAXXZ)
-StudioProject.obj : error LNK2019: unresolved external symbol __imp_glClearColor referenced in function "public: virtual void __cdecl StudioProject::Init(void)" (?Init@StudioProject@@UEAAXXZ)
-StudioProject.obj : error LNK2019: unresolved external symbol __imp_glDisable referenced in function "private: void __cdecl StudioProject::RenderText(class Mesh *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,struct Color)" (?RenderText@StudioProject@@AEAAXPEAVMesh@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UColor@@@Z)
-StudioProject.obj : error LNK2019: unresolved external symbol __imp_glEnable referenced in function "public: virtual void __cdecl StudioProject::Init(void)" (?Init@StudioProject@@UEAAXXZ)
-StudioProject.obj : error LNK2019: unresolved external symbol __imp_glPolygonMode referenced in function "public: virtual void __cdecl StudioProject::Update(double)" (?Update@StudioProject@@UEAAXN@Z)
 StudioProject.obj : error LNK2001: unresolved external symbol __imp___glewActiveTexture
 StudioProject.obj : error LNK2001: unresolved external symbol __imp___glewDeleteProgram
 StudioProject.obj : error LNK2001: unresolved external symbol __imp___glewGetUniformLocation
@@ -198,4 +105,7 @@ shader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderInfo
 shader.obj : error LNK2001: unresolved external symbol __imp___glewGetShaderiv
 shader.obj : error LNK2001: unresolved external symbol __imp___glewLinkProgram
 shader.obj : error LNK2001: unresolved external symbol __imp___glewShaderSource
-C:\Users\isaac\OneDrive\Documents\Studio-Project 2\x64\Debug\MyGraphics.exe : fatal error LNK1120: 99 unresolved externals
+C:\Users\isaac\OneDrive\Documents\Studio-Project 2\\glew\lib\glew32.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\isaac\OneDrive\Documents\Studio-Project 2\\glfw\lib-vc2015\glfw3.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\isaac\OneDrive\Documents\Studio-Project 2\Debug\Common.lib : warning LNK4272: library machine type 'X86' conflicts with target machine type 'x64'
+C:\Users\isaac\OneDrive\Documents\Studio-Project 2\x64\Debug\MyGraphics.exe : fatal error LNK1120: 85 unresolved externals
