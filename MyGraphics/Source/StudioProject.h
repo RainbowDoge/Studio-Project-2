@@ -109,7 +109,7 @@ class StudioProject : public Scene
 		U_TOTAL,
 	};
 
-	enum GEOMETRY_TYPE
+		enum GEOMETRY_TYPE
 	{
 		GEO_AXES,
 		GEO_QUAD,
@@ -133,6 +133,13 @@ class StudioProject : public Scene
 		GEO_TREE,
 		GEO_SPEAR,
 		GEO_DINO1,
+		GEO_CHECKPOINT,
+		GEO_HELDITEM,	   // Added 14/2/2018 (Lindsay)
+		GEO_BITESYMBOL,	   // Added 14/2/2018 (Lindsay)
+		GEO_TAILSYMBOL,	   // Added 14/2/2018 (Lindsay)
+		GEO_STEAK,		   // Added 14/2/2018 (Lindsay)
+		GEO_SPEARSYMBOL,   // Added 14/2/2018 (Lindsay)
+		GEO_ITEMBOX,	   // Added 14/2/2018 (Lindsay)
 		NUM_GEOMETRY,
 	};
 
@@ -150,6 +157,11 @@ private:
 
 	unsigned m_programID;
 	unsigned m_parameters[U_TOTAL];
+
+
+	//temporary
+	int test;
+	bool fire = false;	
 
 	//values
 	double FPS; //fps
