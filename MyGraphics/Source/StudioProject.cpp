@@ -28,7 +28,7 @@ void StudioProject::Init()
 	glEnable(GL_BLEND);
 	glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
 	
-	camera.Init(Vector3(-19.1468, -26, -29.2893), Vector3(0, -26, -29.28), Vector3(0, 1, 0));
+	camera.Init(Vector3(-19.1468, 0, -29.2893), Vector3(0, 0, -29.28), Vector3(0, 1, 0));
 
 	//Dinosaur init
 	isPlayerinGame = false; // boolean if player in game
@@ -317,7 +317,23 @@ void StudioProject::Init()
 	meshList[GEO_SPEAR] = MeshBuilder::GenerateOBJ("spear", "OBJ//Spear.obj");
 	meshList[GEO_SPEAR]->textureID = LoadTGA("Image//SpearUV.tga");
 
+	meshList[GEO_HELDITEM] = MeshBuilder::GenerateQuad("Helditem", Color(1, 1, 1), 1.0f, 1.0f);	  // Added 14/2/2018 (Lindsay)
+	meshList[GEO_HELDITEM]->textureID = LoadTGA("Image//Helditem.tga");							  // Added 14/2/2018 (Lindsay)
 
+	meshList[GEO_BITESYMBOL] = MeshBuilder::GenerateQuad("biteSymbol", Color(1, 1, 1), 1.0f, 1.0f);	  // Added 14/2/2018 (Lindsay)
+	meshList[GEO_BITESYMBOL]->textureID = LoadTGA("Image//biteSymbol.tga");							  // Added 14/2/2018 (Lindsay)
+
+	meshList[GEO_TAILSYMBOL] = MeshBuilder::GenerateQuad("tailSymbol", Color(1, 1, 1), 1.0f, 1.0f);	  // Added 14/2/2018 (Lindsay)
+	meshList[GEO_TAILSYMBOL]->textureID = LoadTGA("Image//tailSymbol.tga");							  // Added 14/2/2018 (Lindsay)
+
+	meshList[GEO_STEAK] = MeshBuilder::GenerateQuad("Steak", Color(1, 1, 1), 1.0f, 1.0f);	  // Added 14/2/2018 (Lindsay)
+	meshList[GEO_STEAK]->textureID = LoadTGA("Image//Steak.tga");							  // Added 14/2/2018 (Lindsay)
+
+	meshList[GEO_SPEARSYMBOL] = MeshBuilder::GenerateQuad("spearSymbol", Color(1, 1, 1), 1.0f, 1.0f);	  // Added 14/2/2018 (Lindsay)
+	meshList[GEO_SPEARSYMBOL]->textureID = LoadTGA("Image//spearSymbol.tga");							  // Added 14/2/2018 (Lindsay)
+
+	meshList[GEO_ITEMBOX] = MeshBuilder::GenerateCube("itemBox", Color(1, 1, 1), 1.0f, 1.0f, 1.0f);	  // Added 14/2/2018 (Lindsay)
+	meshList[GEO_ITEMBOX]->textureID = LoadTGA("Image//itemBox.tga");							  // Added 14/2/2018 (Lindsay)
 }
 
 bool isPointinBox(Vector3 position, Box box)
@@ -327,7 +343,7 @@ bool isPointinBox(Vector3 position, Box box)
 		(position.z >= box.minZ && position.z <= box.maxZ);
 }
 
-bool isPointinCircle(Circle a,  Circle b )
+bool isPointinCircle(Circle a,  Circle b ) //HUBERT OVER HERE
 {
 	float dx = a.xpos - b.xpos;
 	float dy = a.zpos - b.zpos;
@@ -646,6 +662,38 @@ void StudioProject::Update(double dt)
 		}
 	#pragma endregion
 
+#pragma region helditem UI testing						   
+		// Added 14/2/2018 (unfinished)
+		if (Application::IsKeyPressed('7'))					   // Added 14/2/2018 (Lindsay)
+		{
+			test = 1;
+		}
+		if (Application::IsKeyPressed('8'))					   // Added 14/2/2018 (Lindsay)
+		{
+			test = 2;
+		}
+		if (Application::IsKeyPressed('9'))					   // Added 14/2/2018 (Lindsay)
+		{
+			test = 3;
+
+		}
+		if (Application::IsKeyPressed('0'))					   // Added 14/2/2018 (Lindsay)
+		{
+			test = 4;
+		}
+		if (Application::IsKeyPressed(VK_SPACE))			   // Added 14/2/2018 (Lindsay)
+		{													   // Added 14/2/2018 (Lindsay)
+			if (test == 4)									   
+			{												   
+				fire = true;								   
+															  
+			}												   
+															
+			test = 0;										
+		}													
+
+#pragma endregion
+
 	#pragma region Interactive Booleans Updates
 
 		if (Application::IsKeyPressed('5'))
@@ -782,26 +830,74 @@ void StudioProject::Render()
 	modelStack.PopMatrix();
 
 	#pragma region Environment Objects
-		modelStack.PushMatrix();
-				modelStack.Translate(0, 0, 0);
-				RenderMesh(meshList[GEO_SPEAR], false);
+	modelStack.PushMatrix();					// Added 14/2/2018 (Lindsay)
+	modelStack.Scale(5, 5, 5);					// Added 14/2/2018 (Lindsay)
+	modelStack.Translate(0, 1, 0);				// Added 14/2/2018 (Lindsay)
+	RenderMesh(meshList[GEO_ITEMBOX], false);	// Added 14/2/2018 (Lindsay)
+	modelStack.PopMatrix();						// Added 14/2/2018 (Lindsay)
+
+	modelStack.PushMatrix();
+		modelStack.Translate(maindinosaur.GetPosition().x, maindinosaur.GetPosition().y, maindinosaur.GetPosition().z);
+				modelStack.PushMatrix();
+	modelStack.Translate(camera.position.x, camera.position.y, camera.position.z);
+			modelStack.PopMatrix();
+		modelStack.Rotate(maindinosaur.GetRotation()+90, 0, 1, 0);
+		modelStack.Scale(5, 5, 5);
+		RenderMesh(meshList[GEO_DINO1], false);
 		modelStack.PopMatrix();
 
+		if (fire == true)																			// Added 14/2/2018 (Incomplete: Lindsay)
+		{																							// Added 14/2/2018 (Incomplete: Lindsay)
+			modelStack.PushMatrix();																// Added 14/2/2018 (Incomplete: Lindsay)
+			modelStack.Translate(camera.position.x, camera.position.y, camera.position.z);			// Added 14/2/2018 (Incomplete: Lindsay)
+			modelStack.PushMatrix();																// Added 14/2/2018 (Incomplete: Lindsay)
+			modelStack.Translate(maindinosaur.GetPosition().x, 0, maindinosaur.GetPosition().z);	// Added 14/2/2018 (Incomplete: Lindsay)
+			modelStack.PushMatrix();																// Added 14/2/2018 (Incomplete: Lindsay)
+			modelStack.Translate(0, 0, 0);															// Added 14/2/2018 (Incomplete: Lindsay)
+			modelStack.Rotate(maindinosaur.GetRotation() + 180, 0, 1, 0);							// Added 14/2/2018 (Incomplete: Lindsay)
+			RenderMesh(meshList[GEO_SPEAR], false);													// Added 14/2/2018 (Incomplete: Lindsay)
+			modelStack.PopMatrix();																	// Added 14/2/2018 (Incomplete: Lindsay)
+		}
 
-			modelStack.PushMatrix();
-				modelStack.Translate(maindinosaur.GetPosition().x, maindinosaur.GetPosition().y, maindinosaur.GetPosition().z);
-						modelStack.PushMatrix();
-			modelStack.Translate(camera.position.x, camera.position.y, camera.position.z);
-					modelStack.PopMatrix();
-				modelStack.Rotate(maindinosaur.GetRotation()+90, 0, 1, 0);
-				modelStack.Scale(5, 5, 5);
-				RenderMesh(meshList[GEO_DINO1], false);
-				modelStack.PopMatrix();
+		#pragma region Held items display
+
+		if (isPlayerinGame == true)
+		{
+			modelStack.PushMatrix();										   // Added 14/2/2018
+			RenderMeshOnScreen(meshList[GEO_HELDITEM], 40, 54, 10, 10);		   // Added 14/2/2018
+			modelStack.PopMatrix();											   // Added 14/2/2018
+
+			if (test == 1)
+			{
+				modelStack.PushMatrix();										   // Added 14/2/2018
+				RenderMeshOnScreen(meshList[GEO_BITESYMBOL], 40, 54, 8, 8);	   // Added 14/2/2018
+				modelStack.PopMatrix();										   // Added 14/2/2018
+			}
+
+			if (test == 2)
+			{
+				modelStack.PushMatrix();										   // Added 14/2/2018
+				RenderMeshOnScreen(meshList[GEO_TAILSYMBOL], 40, 54, 8, 8);      // Added 14/2/2018
+				modelStack.PopMatrix();									       // Added 14/2/2018
+			}
+
+			if (test == 3)
+			{
+				modelStack.PushMatrix();										   // Added 14/2/2018
+				RenderMeshOnScreen(meshList[GEO_STEAK], 40, 54, 8, 8);           // Added 14/2/2018
+				modelStack.PopMatrix();									       // Added 14/2/2018
+			}
+
+			if (test == 4)
+			{
+				modelStack.PushMatrix();										   // Added 14/2/2018
+				RenderMeshOnScreen(meshList[GEO_SPEARSYMBOL], 40, 54, 8, 8);     // Added 14/2/2018
+				modelStack.PopMatrix();									       // Added 14/2/2018
+			}
 
 
-				modelStack.PushMatrix();
-				RenderMeshOnScreen(meshList[GEO_LIGHTBALL], 8, 52, 5, 5);
-				modelStack.PopMatrix();
+		}
+		#pragma endregion
 
 
 		RenderTextOnScreen(meshList[GEO_TEXT], "FPS:", Color(1, 0, 0), 2, 27, 29);
