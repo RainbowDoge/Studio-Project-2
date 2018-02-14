@@ -271,7 +271,7 @@ void StudioProject::Init()
 	meshList[GEO_LIGHTBALL] = MeshBuilder::GenerateSphere("sphere", Color(1, 1, 1), 18, 36, 1);
 
 	meshList[GEO_QUAD] = MeshBuilder::GenerateQuad("quad", Color(1, 1, 1), 1.f, 1.f);
-	meshList[GEO_QUAD]->textureID = LoadTGA("Image//ground.tga");
+	meshList[GEO_QUAD]->textureID = LoadTGA("Image//QuadFloor.tga");
 
 	#pragma region SKYBOX
 		//INIT SKYBOX LEFT
@@ -294,18 +294,15 @@ void StudioProject::Init()
 		meshList[GEO_BACK]->textureID = LoadTGA("Image//back.tga");
 	#pragma endregion
 
-		meshList[GEO_TAILSYMBOL] = MeshBuilder::GenerateQuad("tailSymbol", Color(1, 1, 1), 1.0f, 1.0f);
-		meshList[GEO_TAILSYMBOL]->textureID = LoadTGA("Image//tailSymbol.tga");
+	//meshList[GEO_IMAGE] = MeshBuilder::GenerateQuad("copy", Color(1, 1, 1), 1.0f, 1.0f);
+	//meshList[GEO_IMAGE]->textureID = LoadTGA("Image//copy.tga");
 
-		meshList[GEO_BITESYMBOL] = MeshBuilder::GenerateQuad("biteSymbol", Color(1, 1, 1), 1.0f, 1.0f);
-		meshList[GEO_BITESYMBOL]->textureID = LoadTGA("Image//biteSymbol.tga");
-
-	meshList[GEO_DOORMAN] = MeshBuilder::GenerateOBJ("doorman", "OBJ//doorman.obj");
-	meshList[GEO_DOORMAN]->textureID = LoadTGA("Image//doorman.tga");
+	//meshList[GEO_DOORMAN] = MeshBuilder::GenerateOBJ("doorman", "OBJ//doorman.obj");
+	//meshList[GEO_DOORMAN]->textureID = LoadTGA("Image//doorman.tga");
 
 
-	meshList[GEO_TREE] = MeshBuilder::GenerateOBJ("tree", "OBJ//tree.obj");
-	meshList[GEO_TREE]->textureID = LoadTGA("Image//tree.tga");
+	//meshList[GEO_TREE] = MeshBuilder::GenerateOBJ("tree", "OBJ//tree.obj");
+	//meshList[GEO_TREE]->textureID = LoadTGA("Image//tree.tga");
 
 	//TEXTS
 	meshList[GEO_TEXT] = MeshBuilder::GenerateText("text", 16, 16);
@@ -320,8 +317,7 @@ void StudioProject::Init()
 	meshList[GEO_SPEAR] = MeshBuilder::GenerateOBJ("spear", "OBJ//Spear.obj");
 	meshList[GEO_SPEAR]->textureID = LoadTGA("Image//SpearUV.tga");
 
-	meshList[GEO_CHECKPOINT] = MeshBuilder::GenerateOBJ("checkpoint", "OBJ//CheckPoint.obj");
-	meshList[GEO_CHECKPOINT]->textureID = LoadTGA("Image//CheckPointUV.tga");
+
 }
 
 bool isPointinBox(Vector3 position, Box box)
@@ -667,15 +663,9 @@ void StudioProject::Update(double dt)
 					maindinosaur.SetSpeed2(maindinosaur.GetSpeed2() + maindinosaur.GetAcceleration());
 				//	std::cout << "Speed " << maindinosaur.GetSpeed() << std::endl;
 					//SPEED LIMITER
-<<<<<<< HEAD
-					if (speed > 4)
-					{
-						speed = 4;
-=======
 					if (maindinosaur.GetSpeed2() > 3)
 					{
 						maindinosaur.SetSpeed2(3);
->>>>>>> 8ca8afc7df2156613f148886a14059bb2c49bdc6
 					}
 					maindinosaur.SetSpeed(maindinosaur.GetSpeed2()); //increase speed by 1 unit every dt (acceleration
 
@@ -783,27 +773,20 @@ void StudioProject::Render()
 
 	RenderSkybox();
 
+	modelStack.PushMatrix();
+		modelStack.Translate(0, -1, 0);
+		modelStack.Scale(1000, 1000, 1000);
+		modelStack.Rotate(-90, 0, 1, 0);
+		modelStack.Rotate(-90, 1, 0, 0);
+		RenderMesh(meshList[GEO_QUAD], false);
+	modelStack.PopMatrix();
+
 	#pragma region Environment Objects
 		modelStack.PushMatrix();
 				modelStack.Translate(0, 0, 0);
 				RenderMesh(meshList[GEO_SPEAR], false);
 		modelStack.PopMatrix();
 
-		modelStack.PushMatrix();
-		modelStack.Translate(0, 0, -5);
-		modelStack.Scale(7, 7, 7);
-		RenderMesh(meshList[GEO_CHECKPOINT], false);
-		modelStack.PopMatrix();
-
-		modelStack.PushMatrix();
-		modelStack.Translate(0, 0, 0);
-		RenderMesh(meshList[GEO_TAILSYMBOL], false);
-		modelStack.PopMatrix();
-
-		modelStack.PushMatrix();
-		modelStack.Translate(0, 0, 1);
-		RenderMesh(meshList[GEO_BITESYMBOL], false);
-		modelStack.PopMatrix();
 
 			modelStack.PushMatrix();
 				modelStack.Translate(maindinosaur.GetPosition().x, maindinosaur.GetPosition().y, maindinosaur.GetPosition().z);
