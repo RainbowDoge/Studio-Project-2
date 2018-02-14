@@ -133,13 +133,6 @@ class StudioProject : public Scene
 		GEO_TREE,
 		GEO_SPEAR,
 		GEO_DINO1,
-		GEO_CHECKPOINT,
-		GEO_HELDITEM,	   // Added 14/2/2018 (Lindsay)
-		GEO_BITESYMBOL,	   // Added 14/2/2018 (Lindsay)
-		GEO_TAILSYMBOL,	   // Added 14/2/2018 (Lindsay)
-		GEO_STEAK,		   // Added 14/2/2018 (Lindsay)
-		GEO_SPEARSYMBOL,   // Added 14/2/2018 (Lindsay)
-		GEO_ITEMBOX,	   // Added 14/2/2018 (Lindsay)
 		NUM_GEOMETRY,
 	};
 
@@ -158,13 +151,10 @@ private:
 	unsigned m_programID;
 	unsigned m_parameters[U_TOTAL];
 
-	//temporary
-	int test;	//Added 14/2/2018 (Lindsay)
-	bool fire = false;	//Added 14/2/2018 (Lindsay)
-
 	//values
 	double FPS; //fps
 
+	double speed; //speed of dinosaur
 
 	//bools 
 	bool isPlayerinGame; //check player in game
@@ -181,8 +171,7 @@ private:
 	Light light[6];
 
 	//Init of car
-	Dinosaur maindinosaur; //main dinosaur
-	
+	Dinosaur maindinosaur; //main car
 
 	//functions
 	void RenderMesh(Mesh *mesh, bool enableLight);
