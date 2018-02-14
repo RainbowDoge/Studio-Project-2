@@ -153,8 +153,9 @@ private:
 
 	//values
 	double FPS; //fps
-	double speed;
-	double acceleration;
+
+	double speed; //speed of dinosaur
+
 	//bools 
 	bool isPlayerinGame; //check player in game
 	bool isKeyPressed; //check if is keypressed
