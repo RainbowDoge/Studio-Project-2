@@ -30,13 +30,14 @@ void StudioProject::Init()
 	
 	camera.Init(Vector3(-19.1468, -26, -29.2893), Vector3(0, -26, -29.28), Vector3(0, 1, 0));
 
-	//Car init
+	//Dinosaur init
 	isPlayerinGame = false; // boolean if player in game
 	isKeyPressed = false; 
 	maindinosaur.SetPosition(Vector3(0,0,0));
 	maindinosaur.SetRotation(0); //set rotation of 0 
 	maindinosaur.SetSpeed(0); //set speed of 0
-	//End of car inits
+	maindinosaur.SetAcceleration(0);
+	//End of dino init
 
 	Mtx44 projection;
 	projection.SetToPerspective(45.f, 4.f / 3.f, 0.1f, 1000.f);
@@ -158,7 +159,7 @@ void StudioProject::Init()
 
 	glUseProgram(m_programID);
 
-	glUniform1i(m_parameters[U_NUMLIGHTS], 8); //set the amount of maximum lights to be 8 since we have 8 lights
+	glUniform1i(m_parameters[U_NUMLIGHTS], 8); //set the amount of maximum lights to be 6 since we have 8 lights
 
 	// Enable depth test
 	glEnable(GL_DEPTH_TEST);
@@ -659,61 +660,70 @@ void StudioProject::Update(double dt)
 		if (isPlayerinGame)
 		{
 				isKeyPressed = false; // init key pressed as false first
-				if (Application::IsKeyPressed('W') && acceleration < 0.21)
+				if (Application::IsKeyPressed('W') && maindinosaur.GetAcceleration() < 0.21)
 				{
-					acceleration += 0.01;
-					speed = speed + acceleration;
+					maindinosaur.SetAcceleration(maindinosaur.GetAcceleration() + 0.01);
+				//	std::cout << "Acceleration " << maindinosaur.GetAcceleration() << std::endl;
+					maindinosaur.SetSpeed2(maindinosaur.GetSpeed2() + maindinosaur.GetAcceleration());
+				//	std::cout << "Speed " << maindinosaur.GetSpeed() << std::endl;
 					//SPEED LIMITER
+<<<<<<< HEAD
 					if (speed > 4)
 					{
 						speed = 4;
+=======
+					if (maindinosaur.GetSpeed2() > 3)
+					{
+						maindinosaur.SetSpeed2(3);
+>>>>>>> 8ca8afc7df2156613f148886a14059bb2c49bdc6
 					}
-					maindinosaur.SetSpeed(speed); //increase speed by 1 unit every dt (acceleration
+					maindinosaur.SetSpeed(maindinosaur.GetSpeed2()); //increase speed by 1 unit every dt (acceleration
 
-					maindinosaur.MoveDinoForward(); //move carforward
-					speed = maindinosaur.GetSpeed();
+					maindinosaur.MoveDinoForward(); //move Dino forward
+					maindinosaur.SetSpeed2(maindinosaur.GetSpeed());
 					isKeyPressed = true; //Key has been pressed
 				}
 				
-				else if (speed > 0.01)
+				else if (maindinosaur.GetSpeed2() > 0.01)
 				{
-					speed -= 0.1;
-					acceleration = 0;
-					maindinosaur.SetSpeed(speed);
+					maindinosaur.SetSpeed2(maindinosaur.GetSpeed2() - 0.1);
+					maindinosaur.SetAcceleration(0);
+					maindinosaur.SetSpeed(maindinosaur.GetSpeed2());
 					maindinosaur.MoveDinoForward();
 				}
 				
 
-				if (Application::IsKeyPressed('S') && acceleration > -0.21)
+				if (Application::IsKeyPressed('S') && maindinosaur.GetAcceleration() > -0.21)
 				{
 					//SPEED LIMITER
-					acceleration -= 0.01;
-					speed = speed + acceleration;
-					if (speed < -2)
+					maindinosaur.SetAcceleration(maindinosaur.GetAcceleration() - 0.01);
+					maindinosaur.SetSpeed2(maindinosaur.GetSpeed2() + maindinosaur.GetAcceleration());
+					if (maindinosaur.GetSpeed2() < -2)
 					{
-						speed = -2;
+						maindinosaur.SetSpeed2(-2);
 					}
-					maindinosaur.SetSpeed(speed);
-					maindinosaur.MoveDinoBackward(); //Move car backward
+					maindinosaur.SetSpeed(maindinosaur.GetSpeed2());
+					maindinosaur.MoveDinoBackward(); //Move Dino backward
 					isKeyPressed = true; //Key has been pressed
 				}
 
-				else if (speed < -0.01)
+				else if (maindinosaur.GetSpeed2() < -0.01)
 				{
-					speed += 0.1;
-					acceleration = 0;
-					maindinosaur.SetSpeed(speed);
+
+					maindinosaur.SetSpeed2(maindinosaur.GetSpeed2() + 0.1);
+					maindinosaur.SetAcceleration(0);
+					maindinosaur.SetSpeed(maindinosaur.GetSpeed2());
 					maindinosaur.MoveDinoForward();
 				}
 				if (Application::IsKeyPressed('A'))
 				{
-					//so that turning rate is based on frames and the car's speed
-					maindinosaur.SetRotation(50 * dt * maindinosaur.GetSpeed()); //rotate car
+					//so that turning rate is based on frames and the Dino's speed
+					maindinosaur.SetRotation(50 * dt * maindinosaur.GetSpeed()); //rotate Dino
 					camera.GetDinoRotation(maindinosaur.GetRotation()); //update the camera
 				}
 				if (Application::IsKeyPressed('D'))
 				{
-					maindinosaur.SetRotation(-50 * dt * maindinosaur.GetSpeed()); //rotate car
+					maindinosaur.SetRotation(-50 * dt * maindinosaur.GetSpeed()); //rotate Dino
 					camera.GetDinoRotation(maindinosaur.GetRotation()); //update the camera
 				}
 
@@ -721,7 +731,7 @@ void StudioProject::Update(double dt)
 		}
 
 
-		//to prevent car from rotating on the spot since rotation is determined by the speed of car
+		//to prevent Dino from rotating on the spot since rotation is determined by the speed of Dino
 		if (!isKeyPressed)
 		{
 			maindinosaur.SetSpeed(0);
@@ -730,7 +740,7 @@ void StudioProject::Update(double dt)
 
 
 
-	camera.GetBoolCar(isPlayerinGame); //pass on the bool value for camera to update camera based on car rotation later on
+	camera.GetBoolDino(isPlayerinGame); //pass on the bool value for camera to update camera based on Dino rotation later on
 	//BoundsCheck();
 	camera.Update(dt); //update camera
 
@@ -806,9 +816,15 @@ void StudioProject::Render()
 				modelStack.PopMatrix();
 
 
+				modelStack.PushMatrix();
+				RenderMeshOnScreen(meshList[GEO_LIGHTBALL], 8, 52, 5, 5);
+				modelStack.PopMatrix();
+
+
 		RenderTextOnScreen(meshList[GEO_TEXT], "FPS:", Color(1, 0, 0), 2, 27, 29);
 		RenderTextOnScreen(meshList[GEO_TEXT], frames, Color(1, 0, 0), 2, 31, 29);
 
+	
 
 }
 
@@ -973,6 +989,28 @@ void StudioProject::RenderTextOnScreen(Mesh* mesh, std::string text, Color color
 	
 	glEnable(GL_DEPTH_TEST);
 }
+
+void StudioProject::RenderMeshOnScreen(Mesh* mesh, int x, int y, int sizex, int sizey)
+{
+	glDisable(GL_DEPTH_TEST);
+	Mtx44 ortho;
+	ortho.SetToOrtho(0, 80, 0, 60, -10, 10); //size of screen UI
+	projectionStack.PushMatrix();
+	projectionStack.LoadMatrix(ortho);
+	viewStack.PushMatrix();
+	viewStack.LoadIdentity(); //No need camera for ortho mode
+	modelStack.PushMatrix();
+	modelStack.LoadIdentity();
+	//to do: scale and translate accordingly
+	modelStack.Translate(x, y, 0);
+	modelStack.Scale(sizex, sizey, 0);
+	RenderMesh(mesh, false); //UI should not have light
+	projectionStack.PopMatrix();
+	viewStack.PopMatrix();
+	modelStack.PopMatrix();
+	glEnable(GL_DEPTH_TEST);
+}
+
 
 void StudioProject::Exit()
 {

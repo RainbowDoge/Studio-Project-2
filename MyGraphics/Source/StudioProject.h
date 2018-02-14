@@ -156,8 +156,9 @@ private:
 
 	//values
 	double FPS; //fps
-	double speed;
-	double acceleration;
+
+	double speed; //speed of dinosaur
+
 	//bools 
 	bool isPlayerinGame; //check player in game
 	bool isKeyPressed; //check if is keypressed
@@ -180,6 +181,7 @@ private:
 	void RenderSkybox();
 	void RenderText(Mesh* mesh, std::string text, Color color);
 	void RenderTextOnScreen(Mesh* mesh, std::string text, Color color, float size, float x, float y);
+	void RenderMeshOnScreen(Mesh* mesh, int x, int y, int sizex, int sizey);
 	//void BoundsCheck();
 	//void CollisionChecks();
 };

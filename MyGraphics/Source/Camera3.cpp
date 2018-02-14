@@ -215,7 +215,7 @@ void Camera3::Reset()
 	right = view.Cross(up);
 }
 
-bool Camera3::GetBoolCar(bool isPlayer)
+bool Camera3::GetBoolDino(bool isPlayer)
 {
 	isPlayerinGame = isPlayer;
 	return isPlayerinGame;

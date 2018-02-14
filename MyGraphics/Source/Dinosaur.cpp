@@ -4,6 +4,8 @@
 Dinosaur::Dinosaur()
 {
 	speed = 0;
+	rotation = 0;
+	acceleration = 0;
 
 }
 
@@ -37,14 +39,19 @@ float Dinosaur::GetSpeed(void)
 	return speed;
 }
 
-void Dinosaur::SetRotation(float _RotationAmount)
-{
-	rotation += _RotationAmount;
-}
-
 Vector3 Dinosaur::GetPosition(void)
 {
 	return dinosaurPosition;
+}
+
+float Dinosaur::GetAcceleration(void)
+{
+	return acceleration;
+}
+
+float Dinosaur::GetSpeed2(void)
+{
+	return speed2;
 }
 
 void Dinosaur::SetPosition(Vector3 vec)
@@ -52,9 +59,23 @@ void Dinosaur::SetPosition(Vector3 vec)
 	dinosaurPosition = vec;
 }
 
+void Dinosaur::SetRotation(float _RotationAmount)
+{
+	rotation += _RotationAmount;
+}
 
 void Dinosaur::SetSpeed(float speedsetter)
 {
 	speed = speedsetter;
 }
 
+void Dinosaur::SetSpeed2(float speed2setter)
+{
+	speed2 = speed2setter;
+}
+
+
+void Dinosaur::SetAcceleration(float accel)
+{
+	acceleration = accel;
+}

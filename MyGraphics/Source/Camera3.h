@@ -53,7 +53,7 @@ public:
 
 	//Functions that make the camera turn along with the car
 	void GetDinoRotation(float); //getting car rotation indirectly
-	bool GetBoolCar(bool); //pass value of bool in "main" for here to check
+	bool GetBoolDino(bool); //pass value of bool in "main" for here to check
 
 
 };
